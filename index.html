@@ -18,8 +18,11 @@
       function areaofsquare()
       {
       var topside = document.getElementById("topside").value;
+      topside = +topside;
       var bottomside = document.getElementById("bottomside").value;
+      bottomside = +bottomside
       var height = document.getElementById("height").value;
+      height = +height
       var output = (topside+bottomside)*height/2;
       document.getElementById("areastatus").innerHTML="your area is "+output;
       }
