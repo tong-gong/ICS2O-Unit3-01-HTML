@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="description" content="daily work ">
+  <meta name="keywords" content="Unit0-09">
+  <meta name="author" content="Tong Gong">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+  </head>
+  <body>
+    <p id="areastatus"></p>
+    <p><input id="topside" type="text" placeholder="Enter the top length"></p>
+    <p><input id="bottomside" type="text" placeholder="Enter the bottom length"></p>
+    <p><input id="height" type="text" placeholder="Enter the height"></p>
+    <p><button onclick="areaofsquare()">calculate</button></p>
+    <script>
+      function areaofsquare()
+      {
+      var topside = document.getElementById("topside").value;
+      var bottomside = document.getElementById("bottomside").value;
+      var height = document.getElementById("height").value;
+      var output = (topside+bottomside)*height/2;
+      document.getElementById("areastatus").innerHTML="your area is "+output;
+      }
+    </script>
+  </body>
+</html>
